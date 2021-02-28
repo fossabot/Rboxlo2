@@ -36,7 +36,7 @@ Rboxlo officially supports Linux and Windows out of the box at the server and cl
 **Tech stack:**
 
 - **Node.js** powers the server and everything surrounding it (REST API, matchmaker, etc.)
-- **PostgreSQL** powers the server's database where all permanent data is stored
+- **MySQL** powers the server's database where all permanent data is stored
 - **Docker** containerizes the server and runs it all in a secure fashion
 - **.NET** is used in the client applications for smooth execution and cross-platform support
 
