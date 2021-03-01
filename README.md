@@ -45,7 +45,7 @@ Rboxlo officially supports Linux and Windows out of the box at the server and cl
 - **Docker** 20.10.0+
 - **Visual Studio** 2019+
 
-The requirements are very short and sweet because Docker is used to run the entire server, and Visual Studio is used to build the client applications. Detailed instructions on how to install Rboxlo are available in [SETUP.MD](https://github.com/lightbulblighter/Rboxlo2/blob/main/Setup/SETUP.md).
+The requirements are very short and sweet because Docker is used to run the entire server, and Visual Studio is used to build the client applications. Detailed instructions on how to install Rboxlo are available in [SETUP.MD](https://github.com/lightbulblighter/Rboxlo2/blob/main/SETUP.md).
 
 ## Contributing
 
