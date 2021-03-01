@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rboxlo.Launcher", "Rboxlo.Launcher\Rboxlo.Launcher.csproj", "{908FEAB3-60A1-491A-B6CC-D0A96707E3A8}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Rboxlo.Core", "Rboxlo.Core\Rboxlo.Core.shproj", "{04E0BEFA-2B0E-48DF-ACA9-4290850A0288}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Rboxlo.Core\Rboxlo.Core.projitems*{04e0befa-2b0e-48df-aca9-4290850a0288}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{908FEAB3-60A1-491A-B6CC-D0A96707E3A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908FEAB3-60A1-491A-B6CC-D0A96707E3A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908FEAB3-60A1-491A-B6CC-D0A96707E3A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908FEAB3-60A1-491A-B6CC-D0A96707E3A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DAEAD34-ACC8-4D76-89C2-42EFDE34549C}
+	EndGlobalSection
+EndGlobal
