@@ -11,5 +11,6 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Common\Crypto.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\FileChecker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\InternetConnection.cs" />
   </ItemGroup>
 </Project>
