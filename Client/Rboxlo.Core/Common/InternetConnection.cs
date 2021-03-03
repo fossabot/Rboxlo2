@@ -186,20 +186,23 @@ namespace Rboxlo.Core.Common
         /// <returns>Whether everything internet-related is okay</returns>
         public bool OK()
         {
+            JObject body;
+            int status;
+
             try
             {
                 InternetResponse response = Get(String.Format("{0}/api/launcher/ok", Constants.BaseURL));
-                int status = response.StatusCode;
-                JObject body = JObject.Parse(response.Data);
-
-                return (body["success"].ToObject<bool>() == true) && (status == 200);
+                status = response.StatusCode;
+                body = JObject.Parse(response.Data);
             }
             catch
             {
-                // we have nothing to do
+                return false;
             }
-
-            return false;
+            finally
+            {
+                return (body["success"].ToObject<bool>() == true) && (status == 200);
+            }
         }
     }
 }

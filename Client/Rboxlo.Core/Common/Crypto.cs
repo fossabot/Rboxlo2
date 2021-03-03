@@ -92,14 +92,15 @@ namespace Rboxlo.Core.Common
             try
             {
                 Convert.FromBase64String(data);
-                return true;
             }
             catch
             {
-                // we have nothing to do
+                return false;
             }
-
-            return false;
+            finally
+            {
+                return true;
+            }
         }
     }
 }
