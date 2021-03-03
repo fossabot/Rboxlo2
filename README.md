@@ -10,7 +10,7 @@ Rboxlo is a **free, open-source** Roblox private server where users can relive m
 
 ## Features
 
-<img src="https://github.com/lightbulblighter/Rboxlo2/raw/main/Branding/Artwork/SwordNoob.png" align="right" width="30%">
+<img src="https://github.com/lightbulblighter/Rboxlo2/raw/main/Branding/Artwork/SwordNoob.png" align="right" width="20%">
 
 **Fully open-source and decentralized**
 
