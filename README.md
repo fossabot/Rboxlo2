@@ -1,5 +1,7 @@
 # Disclaimer
 **THIS IS NOT THE OFFICIAL RBOXLO REPOSITORY!!! The real one is [here](https://github.com/lightbulblighter/Rboxlo). All issues, PRs, etc. will be ignored. This is also not an Rboxlo sequel, I just published this on GitHub for commit signing + interaction with some tools (e.g. FOSSA).**
+<br>
+<br>
 
 <p align="center"><img src="https://github.com/lightbulblighter/Rboxlo2/raw/main/Branding/Logos/Primary/Big.png" width="60%"><br><i>Project Eclipse 🌙</i></p>
 <hr>
