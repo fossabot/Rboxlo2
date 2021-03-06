@@ -199,10 +199,8 @@ namespace Rboxlo.Core.Common
             {
                 return false;
             }
-            finally
-            {
-                return (body["success"].ToObject<bool>() == true) && (status == 200);
-            }
+
+            return (body["success"].ToObject<bool>() == true) && (status == 200);
         }
     }
 }

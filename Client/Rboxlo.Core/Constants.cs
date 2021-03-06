@@ -27,10 +27,5 @@ namespace Rboxlo.Core
         /// Proper project name (title-cased)
         /// </summary>
         public static string ProjectName = Util.ToTitleCase(DotEnv.NAME);
-
-        /// <summary>
-        /// Base path to the Rboxlo registry key
-        /// </summary>
-        public static string BaseRegistryPath = String.Format(@"SOFTWARE\{0}", Util.ToMachineReadable(DotEnv.NAME));
     }
 }

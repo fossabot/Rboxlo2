@@ -12,7 +12,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Common\Crypto.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\FileChecker.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\InternetConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Platform\Windows.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)DotEnv.cs" Visible="false"/>
+    <Compile Include="$(MSBuildThisFileDirectory)DotEnv.cs" Visible="false" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Platform\" />
   </ItemGroup>
 </Project>

@@ -17,7 +17,7 @@ namespace Rboxlo.Core.Common
         /// <param name="isFile">If the given "data" parameter is the path to a file</param>
         /// <param name="returnLowerCase">Whether to return the hash in all lowercase or not</param>
         /// <returns>Computed SHA256 hash, or FALSE if the file doesn't exist and computing file hashes</returns>
-        public static object SHA256(string data, bool isFile = false, bool returnLowerCase = true)
+        public static object Sha256(string data, bool isFile = false, bool returnLowerCase = true)
         {
             StringBuilder result = new StringBuilder();
 
@@ -97,10 +97,8 @@ namespace Rboxlo.Core.Common
             {
                 return false;
             }
-            finally
-            {
-                return true;
-            }
+
+            return true;
         }
     }
 }

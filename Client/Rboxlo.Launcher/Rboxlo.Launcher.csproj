@@ -15,4 +15,6 @@
     <Exec Command="$(SolutionDir)Rboxlo.DotEnv\bin\$(ConfigurationName)\Rboxlo.DotEnv.exe $(SolutionDir)..\.env $(SolutionDir)Rboxlo.Core\DotEnv.cs NAME PRODUCTION SERVER_DOMAIN SERVER_CLOUDFLARE" />
   </Target>
 
+  <Import Project="..\Rboxlo.Core\Rboxlo.Core.projitems" Label="Shared" />
+
 </Project>

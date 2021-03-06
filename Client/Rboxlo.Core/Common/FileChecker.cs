@@ -73,7 +73,7 @@ namespace Rboxlo.Core.Common
         /// <returns>Whether the hash comparison has succeeded</returns>
         private static bool Verify(string location, string hash)
         {
-            object result = Crypto.SHA256(location, true, true);
+            object result = Crypto.Sha256(location, true, true);
             if (result is bool)
             {
                 throw new ArgumentException($"Given file {location} does not exist", location);
