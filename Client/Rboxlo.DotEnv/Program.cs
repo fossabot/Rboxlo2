@@ -125,7 +125,8 @@ namespace Rboxlo.DotEnv
             string nl = Environment.NewLine;
             string tb = "    ";
             string classname = (output.Split('.')[1]).Split('\\').Last();
-
+            string namespacename = (typeof(Program).Namespace).Split('.')[0];
+            
             // Looks ugly, but meh... it works
             Console.WriteLine($"{ApplicationName} -> Generating file...");
             StringBuilder buffer = new StringBuilder();
@@ -134,7 +135,7 @@ namespace Rboxlo.DotEnv
 
             buffer.Append($"using System;{nl}{nl}");
 
-            buffer.Append($"namespace Rboxlo.Core{nl}"); // TODO: Dynamic namespace?
+            buffer.Append($"namespace {namespacename}.Core{nl}");
             buffer.Append($"{{{nl}");
                 buffer.Append($"{tb}public static class {classname}{nl}");
                 buffer.Append($"{tb}{{{nl}");
