@@ -3,11 +3,16 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="$(SolutionDir)Rboxlo.DotEnv\bin\$(ConfigurationName)\Rboxlo.DotEnv.exe $(SolutionDir)..\.env $(SolutionDir)Rboxlo.Core\DotEnv.cs NAME PRODUCTION SERVER_DOMAIN SERVER_CLOUDFLARE" />
+  </Target>
 
 </Project>

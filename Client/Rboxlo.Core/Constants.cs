@@ -13,24 +13,24 @@ namespace Rboxlo.Core
         /// Whether we are debugging or not
         /// </summary>
 #if DEBUG
-        public static bool IsDebugging = true;
+        public static bool Debugging = true;
 #else
-        public static bool IsDebugging = false;
+        public static bool Debugging = !DotEnv.PRODUCTION;
 #endif
 
         /// <summary>
         /// Website domain
         /// </summary>
-        public static string BaseURL = "rboxlo.loc";
+        public static string BaseURL = DotEnv.SERVER_DOMAIN;
 
         /// <summary>
-        /// Project name
+        /// Proper project name (title-cased)
         /// </summary>
-        public static string ProjectName = "Rboxlo";
+        public static string ProjectName = Util.ToTitleCase(DotEnv.NAME);
 
         /// <summary>
         /// Base path to the Rboxlo registry key
         /// </summary>
-        public static string BaseRegistryPath = String.Format(@"SOFTWARE\{0}", "Rboxlo");
+        public static string BaseRegistryPath = String.Format(@"SOFTWARE\{0}", Util.ToMachineReadable(DotEnv.NAME));
     }
 }
