@@ -23,8 +23,26 @@ namespace Rboxlo.DotEnv
             public string Variable;
             public string Data;
 
-            public Constant(string type, string variable, string data)
+            public Constant(string variable, string data)
             {
+                string type;
+
+                // Figure out type
+                if (data.ToLower() == "false" || data.ToLower() == "true")
+                {
+                    type = "bool";
+                    data = data.ToLower(); // "FALSE", "TRUE" are invalid
+                }
+                else if (int.TryParse(data, out int _))
+                {
+                    type = "int";
+                }
+                else
+                {
+                    type = "string";
+                    data = $"\"{data}\""; // Strings need to be wrapped in quotes
+                }
+
                 Type = type;
                 Variable = variable;
                 Data = data;
@@ -94,27 +112,10 @@ namespace Rboxlo.DotEnv
                     {
                         // 0 : Variable name
                         // 1 : Variable raw data
-                        string type;
                         string variable = values[0];
                         string data = values[1];
 
-                        // Figure out type
-                        if (data.ToLower() == "false" || data.ToLower() == "true")
-                        {
-                            type = "bool";
-                            data = data.ToLower(); // "FALSE", "TRUE" are invalid
-                        }
-                        else if (int.TryParse(data, out int _))
-                        {
-                            type = "int";
-                        }
-                        else
-                        {
-                            type = "string";
-                            data = $"\"{data}\""; // Strings need to be wrapped in quotes
-                        }
-
-                        parsed.Add(new Constant(type, variable, data));
+                        parsed.Add(new Constant(variable, data));
                     }
                 }
             }
