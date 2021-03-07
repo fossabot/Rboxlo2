@@ -13,5 +13,10 @@ namespace Rboxlo.Launcher
     /// </summary>
     public partial class App : Application
     {
+        private void AppStartup(object sender, StartupEventArgs e)
+        {
+            UI.MainWindow window = new UI.MainWindow(e.Args);
+            window.Show();
+        }
     }
 }
