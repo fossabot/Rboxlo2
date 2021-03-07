@@ -23,6 +23,6 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - "./Server/schema.sql:/usr/local/bin/structure.sql"
+      - "./Server/app/schema.sql:/usr/local/bin/structure.sql"
     cap_add:
       - "SYS_NICE"
