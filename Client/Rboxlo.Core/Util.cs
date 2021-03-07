@@ -25,7 +25,7 @@ namespace Rboxlo.Core
         /// </summary>
         /// <param name="bytes">Bytes</param>
         /// <param name="decimals">Max amount of decimals to display</param>
-        /// <param name="bi">Bisexual form</param>
+        /// <param name="bi">More exact form of size display, in accordance with IEC</param>
         public static string FormatBytes(int bytes, int decimals = 2, bool bi = true)
         {
             if (bytes == 0)
