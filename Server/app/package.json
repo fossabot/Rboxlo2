@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/lightbulblighter/Rboxlo2/issues"
   },
-  "homepage": "https://github.com/lightbulblighter/Rboxlo2#readme"
+  "homepage": "https://github.com/lightbulblighter/Rboxlo2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "handlebars-layouts": "^3.1.4",
+    "vhost": "^3.0.2"
+  }
 }

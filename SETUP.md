@@ -24,7 +24,7 @@ This guide assumes you have the following applications installed. If you do not 
 We have finished building the Rboxlo Server.
 
 ## Troubleshooting
-- Rboxlo is set up with `rboxlo.loc` everywhere as its default domain. If you are not able to access `rboxlo.loc` locally, add all the domains in `server/domains.json` in the format `127.0.0.1 {domain}.rboxlo.loc` to your host. Again, this only works locally. **You do not need to do this if you are in a production environment.**
+- Rboxlo is set up with `rboxlo.loc` everywhere as its default domain. If you are not able to access `rboxlo.loc` locally, add all the domains in `Server/app/servers/manifest.json` in the format `127.0.0.1 {domain}.rboxlo.loc` to your hosts file, and `127.0.0.1 rboxlo.loc`. **You do not need to do this if you are in a production environment.**
 - If the captcha is not working, make sure that you have input the public and site key for **Google's Invisible reCaptcha v2.**
 - If you are in a debugging environment, please set `PRODUCTION` in the environment file to `false`. **If you are in a production environment, make sure to set `PRODUCTION` in the environment file to `true`.**
 - If you have any other issue not listed here, please do not hesitate to file an issue on the GitHub [here](https://github.com/lightbulblighter/Rboxlo/issues/new).

@@ -3,8 +3,8 @@ services:
   server:
     container_name: "${NAME}_server"
     build:
-      context: "."
-      dockerfile: "./Server/Dockerfile"
+      context: "./Server"
+      dockerfile: "./Dockerfile"
       args:
         SERVER_PORT: ${SERVER_PORT}
     env_file:

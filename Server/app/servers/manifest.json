@@ -1,0 +1,41 @@
+{
+    "eclipse": {
+        "entrypoint": "/servers/eclipse/server.js",
+        "domains": [
+            "SPECIAL_ITEM_PLEASE_IGNORE_ME_DONT_ADD_THIS_TO_HOSTS_FILE_ADD_THE_ONES_BELOW_INSTEAD",
+            "www",
+            "abuse",
+            "accountsettings",
+            "ads",
+            "api",
+            "assetdelivery",
+            "assetgame",
+            "auth",
+            "avatar",
+            "badges",
+            "billing",
+            "catalog",
+            "chat",
+            "clientsettings.api",
+            "data",
+            "develop",
+            "followings",
+            "friends",
+            "gameinternationalization",
+            "gamejoin",
+            "gamepersistence",
+            "games",
+            "groups",
+            "inventory",
+            "locale",
+            "notifications",
+            "points",
+            "presence",
+            "publish",
+            "textfilter",
+            "thumbnails",
+            "translations",
+            "versioncompatibility.api"
+        ]
+    }
+}
