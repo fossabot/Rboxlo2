@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:14-alpine
 ARG SERVER_PORT
 
 ENV DOCKER true
