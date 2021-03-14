@@ -4,6 +4,8 @@
 Rboxlo is a **free, open-source** Roblox private server application that can be used to relive childhood memories and create new ones. Using Rboxlo, you can set-up your own Roblox private server in minutes with the ability to play Roblox clients dating all the way back to 2007, and as modern as 2017. Rboxlo was created to truly decentralize Roblox, and to eventually eclipse the proprietary closed-source Roblox revivals that exist today.
 
 ## Features
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flightbulblighter%2FRboxlo2.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Flightbulblighter%2FRboxlo2?ref=badge_shield)
+
 
 <img src="https://github.com/lightbulblighter/Rboxlo2/raw/main/Branding/Artwork/SwordNoob.png" align="right" width="20%">
 
@@ -72,3 +74,5 @@ In jurisdictions that recognize copyright laws, the author or authors of this so
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flightbulblighter%2FRboxlo2.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flightbulblighter%2FRboxlo2?ref=badge_large)
