@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        {{#block "head"}}
+            <meta charset="utf-8">
+            <meta http-equiv="content-language" content="en">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta http-equiv="x-ua-compatible" content="ie-edge">
+            <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css">
+            <link rel="stylesheet" href="{{ env.PROPER_DOMAIN }}/css/styles{{ env.DSR }}.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+            <link rel="manifest" href="/site.webmanifest">
+            <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+            <meta name="msapplication-TileColor" content="#d5bfff">
+            <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+            <meta name="theme-color" content="#d5bfff">
+            <title>{{ page.title }} - {{ env.PROPER_NAME }}</title>
+        {{/block}}
+    </head>
+    <body class="d-flex flex-column h-100">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">{{ env.PROPER_NAME }}</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            {{#block "navigation-bar-items"}}
+                                <li class="nav-item">
+                                    <a class="nav-link{{#if page.home}} active{{/if}}" href="/" {{#if page.home}}aria-current="page"{{/if}}>Home</a>
+                                </li>
+                            {{/block}}
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-shrink-0">
+            <div class="container">
+                {{#block "body"}}
+                {{/block}}
+            </div>
+        </main>
+
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container">
+                {{#block "footer"}}
+                    <span class="text-muted">Running {{ env.VERSION }}</span>
+                {{/block}}
+            </div>
+        </footer>
+
+        {{#block "scripts"}}
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="{{ env.PROPER_DOMAIN }}/js/app{{ env.DSR }}.js"></script>
+        {{/block}}
+    </body>
+</html>

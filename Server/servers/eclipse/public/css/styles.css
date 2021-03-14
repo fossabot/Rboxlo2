@@ -1,0 +1,37 @@
+/* Backdrops */
+.about-backdrop { background-image: url("/html/img/backdrops/about.png") }
+.moderation-backdrop { background-image: url("/html/img/backdrops/moderation.png") }
+
+/* Palette */
+.rboxlo-color-1 { background-color: #a0f !important }
+.rboxlo-color-2 { background-color: #c75aff !important }
+.rboxlo-color-muted { background-color: #dd98ff !important }
+
+.inherit-color { color: inherit !important }
+.vertical-align-middle { vertical-align: middle !important }
+
+/* Weird classes used literally once but should look fancy in html */
+.pb-2px { padding-bottom: 2px !important }
+.fs-1rem { font-size: 1rem !important }
+
+/* Opacity */
+.opacity-0 { opacity: 0 !important }
+.opacity-1 { opacity: 0.2 !important }
+.opacity-2 { opacity: 0.4 !important }
+.opacity-3 { opacity: 0.6 !important }
+.opacity-4 { opacity: 0.4 !important }
+.opacity-5 { opacity: 0.5 !important }
+
+/* Social footer links */
+.social-footer-link {
+	-webkit-transition: opacity 1 1s ease-in;
+	-moz-transition: opacity 1 1s ease-in;
+	-ms-transition: opacity 1 1s ease-in;
+    -o-transition: opacity 1 ease-in;
+	transition: opacity 1 ease-in;
+	opacity: 0.4;
+}
+.social-footer-link:hover { opacity: 1 }
+
+/* Sticky footer */
+main > .container { padding-top: 60px }

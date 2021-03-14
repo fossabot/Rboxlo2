@@ -19,7 +19,7 @@ This guide assumes you have the following applications installed. If you do not 
 5. Read the file thoroughly before making any changes. Then, change the values as you please. Do note that some values are required to change, such as API secrets or passwords.
 6. Save and close your `.env` file.
 7. We are done editing our environment. We are now going to build the Rboxlo Server.
-8. The Rboxlo Server is now set up. Run `docker-compose up --build` to build and run it. Navigate to `rboxlo.loc` to see the Rboxlo Server in action.
+8. The Rboxlo Server is now set up. Run `docker-compose up --build` to build and run it. Assuming you haven't changed `SERVER_DOMAIN`, navigate to `rboxlo.loc` to see the Rboxlo Server in action.
 
 We have finished building the Rboxlo Server.
 

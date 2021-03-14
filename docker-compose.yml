@@ -3,7 +3,7 @@ services:
   server:
     container_name: "${NAME}_server"
     build:
-      context: "./Server"
+      context: "."
       dockerfile: "./Dockerfile"
       args:
         SERVER_PORT: ${SERVER_PORT}
@@ -23,6 +23,6 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - "./Server/app/schema.sql:/usr/local/bin/structure.sql"
+      - "./Server/schema.sql:/usr/local/bin/structure.sql"
     cap_add:
       - "SYS_NICE"
